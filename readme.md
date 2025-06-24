@@ -117,7 +117,7 @@ The combined plot includes:
 - The Taylor series for 1 - e^(-x) is: x - x²/2 + x³/6 - x⁴/24 + ...
 - For the birthday paradox, x = k(k-1)/(2N)
 - The 50% threshold occurs when k ≈ √(2N ln(2))
-- For N=365: ~23 people (your code correctly identified this)
+- For N=365: ~23 people (code identified this)
 - For SHA-256: ~2^128 hashes (practically impossible)
 
 ## Key Findings:
