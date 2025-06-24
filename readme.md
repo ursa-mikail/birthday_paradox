@@ -172,9 +172,10 @@ The more precise version is:
 For $$\ N = 2^{256} \$$ (SHA 256):
 
 $$\
-k \approx \sqrt{2 \cdot 256 \cdot \ln 2} \approx 89.82
+k \approx \sqrt{2 \cdot 2^{256} \cdot \ln 2} \approx 4.006518692980012e+38
 \$$
 
+bits: $$\ \ln k \approx 88.88615624166214 \$$
 
 | Concept               | Value                                                           |
 | --------------------- | --------------------------------------------------------------- |
