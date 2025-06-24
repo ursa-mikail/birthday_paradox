@@ -238,7 +238,7 @@ k \approx 1.1774 \cdot 3.4 \times 10^{38} \approx 4.0 \times 10^{38}
 
 ### 🔐 Insight:
 
-- You would need to compute **~\( 2^{128} \)** SHA-256 hashes to reach a 50% probability of collision.
+- You would need to compute **~\( $$\ 2^{128} \$$ \)** SHA-256 hashes to reach a 50% probability of collision.
 - This number is **astronomically large**, making SHA-256 **collision-resistant** in practical scenarios.
 
 ---
