@@ -11,13 +11,13 @@ Let:
 
 $$\
 P(k; N) = \prod_{i=0}^{k-1} \left(1 - \frac{i}{N}\right)
-$$\
+\$$
 
-The probability of **at least one collision**:
+The probability of **at least 1 collision**:
 
 $$\
 P_{\text{collision}}(k; N) = 1 - \prod_{i=0}^{k-1} \left(1 - \frac{i}{N}\right)
-$$\
+\$$
 
 ---
 
