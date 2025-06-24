@@ -114,18 +114,17 @@ The combined plot includes:
 
 ---
 ## Mathematical Insights:
-
-The Taylor series for 1 - e^(-x) is: x - x²/2 + x³/6 - x⁴/24 + ...
-For the birthday paradox, x = k(k-1)/(2N)
-The 50% threshold occurs when k ≈ √(2N ln(2))
-For N=365: ~23 people (your code correctly identified this)
-For SHA-256: ~2^128 hashes (practically impossible)
+- The Taylor series for 1 - e^(-x) is: x - x²/2 + x³/6 - x⁴/24 + ...
+- For the birthday paradox, x = k(k-1)/(2N)
+- The 50% threshold occurs when k ≈ √(2N ln(2))
+- For N=365: ~23 people (your code correctly identified this)
+- For SHA-256: ~2^128 hashes (practically impossible)
 
 ## Key Findings:
 
-Birthday Paradox: Taylor series works well for small k values but diverges for larger groups
-SHA-256: The collision probability is so astronomically small that even with 100 hashes, it's effectively zero
-Approximation Quality: Higher-order Taylor terms dramatically improve accuracy, especially for larger k values
+- Birthday Paradox: Taylor series works well for small k values but diverges for larger groups
+- SHA-256: The collision probability is so astronomically small that even with 100 hashes, it's effectively 0
+- Approximation Quality: Higher-order Taylor terms dramatically improve accuracy, especially for larger k values
 
 The visualization shows how the different approximation methods compare and provides insight into when each approach is most appropriate. The SHA-256 analysis demonstrates why cryptographic hash functions are considered secure against collision attacks.
 
