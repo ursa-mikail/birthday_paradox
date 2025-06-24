@@ -157,6 +157,33 @@ k \approx \sqrt{2 \cdot 365 \cdot \ln 2} \approx \sqrt{505.6} \approx 22.5
 So, **only 23 people** are needed for a **50% chance** that two share the same birthday.
 
 
+For SHA-256:
+
+We often hear: 
+$$\ 𝑘 \approx \sqrt{2^n} = 2^{n/2} \$$
+
+$$\ 𝑘 ≈ 2^{256/2} = 2^128 \$$
+
+This is a rule-of-thumb estimate and comes from ignoring constants.
+
+🧮 The Exact Formula:
+The more precise version is:
+
+For $$\ `N = 2^{256}` \$$ (SHA 256):
+
+$$\
+k \approx \sqrt{2 \cdot 256 \cdot \ln 2} \approx 89.82
+\$$
+
+
+| Concept               | Value                                                           |
+| --------------------- | --------------------------------------------------------------- |
+| Approx birthday bound | $k \approx 2^{128}$                                             |
+| Exact birthday bound  | $k = \sqrt{2^{256} \cdot 2\ln 2} = 2^{128} \cdot \sqrt{2\ln 2}$ |
+| Extra multiplier      | $\sqrt{2 \ln 2} \approx 1.177$                                  |
+| So log becomes        | $\ln(k) \approx 128 \cdot \ln 2 + \ln(1.177) \approx 89.82$     |
+
+
 
 ## 🔁 Diminishing Harmonic Bounce
 
