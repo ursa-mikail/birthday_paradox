@@ -5,7 +5,7 @@ On the Birthday Paradox and how it relates to harmonics, and then plot a harmoni
 The Birthday Paradox refers to the counterintuitive probability that in a group of just 23 people, there's a > 50% chance that at least 2 share the same birthday.
 
 Let:
-- 𝑁: number of possible birthdays (or hash outputs) → e.g., 365 days or $$/ 2^256 /$$ for SHA-256.
+- 𝑁: number of possible birthdays (or hash outputs) → e.g., 365 days or $$/ 2^{256} /$$ for SHA-256.
 - 𝑘: number of samples (people/hashes).
 - 𝑃(𝑘;𝑁): probability of no collision after 𝑘 samples:
 
