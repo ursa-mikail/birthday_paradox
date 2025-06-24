@@ -37,6 +37,119 @@ k \approx 23
 
 ---
 
+## 🎯 Goal
+
+We want to estimate the probability of a birthday collision using the Taylor expansion of the logarithm and exponential functions.
+
+We aim to find:
+
+$$\
+P(\text{no collision}) \approx e^{-\frac{k(k-1)}{2N}}
+\$$
+
+and solve:
+
+$$\
+P(\text{collision}) = 1 - P(\text{no collision}) \approx 0.5 \Rightarrow k \approx \sqrt{2N \ln 2}
+\$$
+
+---
+
+## 🎲 Setup
+
+- Total possible values: `N` (e.g., 365 birthdays)
+- We randomly select `k` values **without replacement**
+- Interested in the **probability of no collisions**
+
+---
+
+## 🧮 Exact Expression
+
+The probability of no collisions is:
+
+$$\
+P_{\text{no collision}} = \prod_{i=0}^{k-1} \left(1 - \frac{i}{N} \right)
+\$$
+
+Take the natural logarithm:
+
+$$\
+\ln P_{\text{no collision}} = \sum_{i=0}^{k-1} \ln\left(1 - \frac{i}{N} \right)
+\$$
+
+---
+
+## 🧩 Step 1: Taylor Expand `ln(1 - x)`
+
+Using the Taylor series for \( \ln(1 - x) \):
+
+$$\
+\ln(1 - x) = -x - \frac{x^2}{2} - \frac{x^3}{3} - \dots \quad \text{(for } |x| < 1)
+\$$
+
+Apply to each term:
+
+$$\
+\ln\left(1 - \frac{i}{N} \right) \approx -\frac{i}{N} - \frac{1}{2} \left( \frac{i}{N} \right)^2 + \dots
+\$$
+
+Summing over all `i`:
+
+$$\
+\ln P_{\text{no collision}} \approx -\sum_{i=0}^{k-1} \frac{i}{N} = -\frac{1}{N} \sum_{i=0}^{k-1} i = -\frac{k(k-1)}{2N}
+\$$
+
+Exponentiating both sides:
+
+$$\
+P_{\text{no collision}} \approx e^{-\frac{k(k-1)}{2N}} \approx e^{-\frac{k^2}{2N}}
+\$$
+
+(for large `k`, we approximate \( k(k-1) \approx k^2 \))
+
+---
+
+## 📐 Step 2: Find When Collision Probability is ~50%
+
+We want:
+
+$$\
+1 - e^{-k^2 / (2N)} \approx 0.5 \Rightarrow e^{-k^2 / (2N)} = 0.5
+\$$
+
+Taking logarithm:
+
+$$\
+-\frac{k^2}{2N} = \ln(0.5) = -\ln 2
+\Rightarrow \frac{k^2}{2N} = \ln 2
+\Rightarrow k = \sqrt{2N \ln 2}
+\$$
+
+---
+
+## ✅ 
+
+- The **birthday paradox** arises because collision probability grows quickly
+- Using Taylor series on `ln(1 - x)`, we derived:
+
+$$\
+P_{\text{no collision}} \approx e^{-k^2 / (2N)} \Rightarrow k \approx \sqrt{2N \ln 2}
+\$$
+
+---
+
+## 📌 Real-World Example
+
+For `N = 365` (days in a year):
+
+$$\
+k \approx \sqrt{2 \cdot 365 \cdot \ln 2} \approx \sqrt{505.6} \approx 22.5
+\$$
+
+So, **only 23 people** are needed for a **50% chance** that two share the same birthday.
+
+
+
 ## 🔁 Diminishing Harmonic Bounce
 
 To simulate a “bouncing ball” decay effect, we define:
