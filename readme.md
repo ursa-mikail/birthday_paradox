@@ -162,14 +162,14 @@ For SHA-256:
 We often hear: 
 $$\ 𝑘 \approx \sqrt{2^n} = 2^{n/2} \$$
 
-$$\ 𝑘 ≈ 2^{256/2} = 2^128 \$$
+$$\ 𝑘 ≈ 2^{256/2} = 2^{128} \$$
 
 This is a rule-of-thumb estimate and comes from ignoring constants.
 
 🧮 The Exact Formula:
 The more precise version is:
 
-For $$\ `N = 2^{256}` \$$ (SHA 256):
+For $$\ N = 2^{256} \$$ (SHA 256):
 
 $$\
 k \approx \sqrt{2 \cdot 256 \cdot \ln 2} \approx 89.82
