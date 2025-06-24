@@ -118,7 +118,7 @@ The combined plot includes:
 - For the birthday paradox, x = k(k-1)/(2N)
 - The 50% threshold occurs when k ≈ √(2N ln(2))
 - For N=365: ~23 people (code identified this)
-- For SHA-256: ~2^128 hashes (practically impossible)
+- For SHA-256: ~2^128 hashes (practically infeasible to find the collision)
 
 ## Key Findings:
 
