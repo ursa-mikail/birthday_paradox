@@ -9,15 +9,15 @@ Let:
 - 𝑘: number of samples (people/hashes).
 - 𝑃(𝑘;𝑁): probability of no collision after 𝑘 samples:
 
-\[
+$$\
 P(k; N) = \prod_{i=0}^{k-1} \left(1 - \frac{i}{N}\right)
-\]
+$$\
 
 The probability of **at least one collision**:
 
-\[
+$$\
 P_{\text{collision}}(k; N) = 1 - \prod_{i=0}^{k-1} \left(1 - \frac{i}{N}\right)
-\]
+$$\
 
 ---
 
