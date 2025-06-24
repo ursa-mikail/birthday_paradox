@@ -41,6 +41,8 @@ k \approx 23
 
 We want to estimate the probability of a birthday collision using the Taylor expansion of the logarithm and exponential functions.
 
+To prove the Birthday Paradox using a Taylor series and calculus, we'll approximate the probability of no collisions when selecting k samples uniformly at random from a set of size N, and use the Taylor expansion of the exponential function.
+
 We aim to find:
 
 $$\
