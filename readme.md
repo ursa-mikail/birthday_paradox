@@ -70,13 +70,19 @@ P(\text{collision}) = 1 - P(\text{no collision}) \approx 0.5 \Rightarrow k \appr
 The probability of no collisions is:
 
 $$\
+P_{\text{no collision}} = \frac{N}{N} . \frac{N-1}{N} . \frac{N-2}{N} ... . \frac{N- k+1}{N} 
+\$$
+
+which is:
+
+$$\
 P_{\text{no collision}} = \prod_{i=0}^{k-1} \left(1 - \frac{i}{N} \right)
 \$$
 
 Take the natural logarithm:
 
 $$\
-\ln P_{\text{no collision}} = \sum_{i=0}^{k-1} \ln\left(1 - \frac{i}{N} \right)
+\ln \ P_{\text{no collision}} = \sum_{i=0}^{k-1} \ln\left(1 - \frac{i}{N} \right)
 \$$
 
 ---
