@@ -227,7 +227,7 @@ sin(k/5) ≈ (k/5) - (k/5)³/6 + ...
 Now multiply this by `1/√k` (the decay term). This implies the bounce function is approximately:
 
 $$\
-bounce(k)≈ \lvert \frac{k}{5} - \frac{ (k/5)^3 }{6}  + ... \rvert . ​\frac{1}{\ sqrt {k}}
+bounce(k) ≈ \lvert \frac{k}{5} - \frac{ (k/5)^3 }{6}  + ... \rvert . ​\frac{1}{ \sqrt {k}}
 \$$
 
 ```
