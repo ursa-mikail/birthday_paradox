@@ -203,10 +203,12 @@ This is illustrative only and does **not** reflect real collision probability—
 ### 🔁 Intuition: Fluctuating Probability and Harmonic Decay
 
 - The sine term `sin(k/5)` introduces **oscillations**. These simulate the mental "surprise bounce" we feel as the probability of a birthday collision increases.
-- The `(1/√k)` term introduces **decay**, reflecting that as `k` (number of people) increases, each new person adds **less new information** or surprise.
+- The `(1/√k)` term introduces **decay**, reflecting that as `k` (number of people) increases, each new person adds **less new information** or surprise – the more people you add, the smaller the per-person contribution to your feeling of uncertainty. This is like a diminishing bounce—each new addition is less surprising.
 - Together, these form a **damped oscillation**: a gradually flattening wave.
 
 Think of this function as simulating a mental "bounce"—your intuitive surprise at a match increases sharply early on, then levels off.
+- Early on, each new person significantly increases the chance of a collision.
+- Later additions contribute less — the surprise “bounces” fade.
 
 ### 🧮 Taylor Series Expansion
 
@@ -222,13 +224,16 @@ sin(k/5) ≈ (k/5) - (k/5)³/6 + ...
 = (k/5) - (k³ / 750) + ...
 ```
 
-Now multiply this by `1/√k` (the decay term):
+Now multiply this by `1/√k` (the decay term). This implies the bounce function is approximately:
+
+$$\
+bounce(k)≈ \lvert \frac{k}{5} - \frac{ (k/5)^3 }{6}  + ... \rvert . ​\frac{1}{\ sqrt {k}}
+\$$
 
 ```
 bounce(k) ≈ |(k/5 - k³/750 + …) * (1/√k)|
 = |(√k / 5) - (k^(5/2) / 750) + …|
 ```
-
 
 So as `k` grows:
 
