@@ -237,8 +237,9 @@ bounce(k) ≈ |(k/5 - k³/750 + …) * (1/√k)|
 
 So as `k` grows:
 
-- The `√k` term grows slowly.
-- But the `k^(5/2)` term grows faster and **subtracts**, leading to **damping**.
+- As as 𝑘 increases, the `√k` term grows slowly.
+- The higher-order terms start subtracting more.
+- So even though the sine expands positively at first, the decay terms (like $$\ \frac{1}{ \sqrt {k}} \$$ which $$\ k^{5/2} \$$ is part of) dominate and eventually reduce the overall value — a damped oscillation. The term grows faster and **subtracts**, leading to **damping**.
 - This mirrors how the **intuition** for collisions starts large but **diminishes** as we expect duplicates.
 
 ### 🔍 Conceptual Summary
